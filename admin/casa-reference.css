@@ -1,0 +1,47 @@
+.casa-meta-wrap:before,
+.casa-meta-wrap:after {
+	content: " ";
+	display: table;
+}
+.casa-meta-wrap:after {
+	clear: both;
+}
+.casa-meta-wrap {
+	margin: 0 0 10px;
+}
+.casa-meta-wrap.close {
+	margin: 0;
+}
+.casa-meta-label,
+.casa-meta-input,
+.casa-meta-radio {
+	vertical-align: top;
+	float: left;
+}
+.casa-meta-label {
+	width: 25%;
+	padding: 5px 0;
+}
+.close .casa-meta-label {
+	padding: 2px 0;
+}
+.casa-meta-label.required > span {
+	color: #c00;
+	font-weight: bold;
+}
+.casa-meta-wrap .casa-meta-radio {
+	margin: 4px 4px 0 0;
+}
+.casa-meta-input {
+	width: 100%;
+	margin: 0;
+}
+.casa-meta-label ~ .casa-meta-input {
+	width: 75%;
+}
+.casa-meta-input h4 {
+	margin: 0;
+}
+.casa-meta-textarea {
+	resize: vertical;
+}
