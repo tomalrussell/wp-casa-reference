@@ -136,8 +136,8 @@ function set_title( $post_id, $meta ) {
 	$title = Output\get_default_listing($meta);
 	$slug = sanitize_title( sanitize_title_with_dashes($title,'','save') );
 	$success = $wpdb->query(
-		$wpdb->prepare(       // @TODO wp_posts must be parameterised to work on multisite
-			"UPDATE wp_posts
+		$wpdb->prepare(       
+			"UPDATE $wpdb->posts
 			SET post_title = %s,
 			post_name = %s
 			WHERE ID = %d",
